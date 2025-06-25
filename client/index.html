@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+    <link rel = "stylesheet" href = "/style.css">
+    <script src = "script.js" defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ-QvO0qgDfd4-eSAnjqAonlK-AzpHpAk&callback=initMap">
+    </script>
+    
+
+</head>
+
+
+<body>
+
+    <div id = "form-container">
+        <h1>Where's My Satellite?!</h1>
+        <p class = "description">Select a satellite from the drop down below. You can view historical ground track data over various time ranges, and download the data as well!</p>
+        <form id = "satForm">
+            <label>Select a Satellite</label>
+            <select name = "sats" id = "sats">
+                <option>ISS (ZARYA)</option>
+                <option>NOAA 19</option>
+                <option>LANDSAT 9</option>
+                <option>SWISSCUBE</option>
+                <option>NORSAT 1</option>
+            </select>
+        
+            <label>Time History</label>
+            <select name = "time" id = "times">
+                <option value = "15">15 minutes</option>
+                <option value = "30">30 minutes</option>
+                <option value = "60">60 minutes</option>
+                <option value = "90">90 minutes</option>
+            </select>
+            <button id="submit" type="submit" >Submit</button>
+            
+        </form>
+
+    </div>
+
+    <div class = "button-group">
+        <button id="clear" type="Clear Tracking Data">Clear Tracking Data</button>
+        <button id="export" type="Export Data">Export Data</button>
+    </div>
+    
+    <div id = "info"></div>
+
+    <div id = "map" style = "height: 500px; width: 100%;"></div>
+
+</body>
+
+</html>

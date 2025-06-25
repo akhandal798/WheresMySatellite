@@ -1,0 +1,19 @@
+{
+  "name": "lambda_transfer",
+  "version": "1.0.0",
+  "main": "s3_to_rds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "pg": "^8.16.0",
+    "satellite.js": "^6.0.0"
+  }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body > #map {
+  flex-grow: 1;
+  height: auto;
+  width: 100%;
+  min-height: 500px;
+}
+
+
+#form-container {
+  background-color: #fff;
+  z-index: 1;
+}
+
+#map {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  min-height: 500px; /* fallback in case flex doesn't trigger */
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  background-color: #000983;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+#satForm {
+  font-family: 'Inter', sans-serif;
+  color: #000983;
+  text-align: left;
+  margin-right: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  color: #000983;
+  text-align: left;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+select {
+  font-family: 'Inter', sans-serif;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease-in-out;
+}
+
+label {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #000983; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.button-group button:hover {
+  background-color:  #696974; 
+}
+
+#submit {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: #000983; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  margin-left: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+#submit:hover {
+  background-color:  #696974; 
+}
