@@ -33,8 +33,8 @@ app.use(express.static(path.join(__dirname, '../client')));
 //Connect once before server starts
 client.connect()
   .then(() => {
-    app.listen(PORT, () => {
-      console.log(`Server listening on PORT: ${PORT}`)
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`Server listening on http://0.0.0.0:${PORT}`)
     });
   })
   .catch(err => {
