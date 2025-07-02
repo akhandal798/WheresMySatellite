@@ -6,9 +6,10 @@ const cors = require('cors');
 
 require('dotenv').config()
 
-const app = express();
 app.use(cors());
-const PORT = process.env.PORT || 8080;
+
+const app = express();
+const PORT = 3000;
 
 const client = new Client({
     user: process.env.PG_USER,
