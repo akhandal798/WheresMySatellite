@@ -53,7 +53,7 @@ document.getElementById('satForm').addEventListener('submit', function(e) {
     //info.innerHTML = '<p>Loading...</p>';
 
     //Direct the request with the body of the JSON being composed of the satellite and time
-    fetch('https://wheresmysatellitebackend.onrender.com', {
+    fetch('https://wheresmysatellitebackend.onrender.com/getSatelliteData', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
